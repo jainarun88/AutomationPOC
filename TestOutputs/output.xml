@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.6 on win32)" generated="20220411 18:43:49.142" rpa="false">
+<suite id="s1" name="TC 04 TestFiles" source="C:\Users\arun.jain\PycharmProjects\AutomationPOC\TestCases\TC_04_TestFiles.robot">
+<test id="s1-t1" name="TC Run">
+<kw name="Validate &quot;state&quot; For &quot;ASYNC_RESPONSE&quot;">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${record}" == "Success"</arg>
+<arg>String Equal Ignore Case</arg>
+<arg>${record}</arg>
+<arg>Success</arg>
+<arg>ELSE IF</arg>
+<arg>"${record}" == "Failed" and "${type}" == "ASYNC_RESPONSE"</arg>
+<arg>Async Response Error Code and Message</arg>
+<arg>${record}</arg>
+<arg>Success</arg>
+<arg>ELSE</arg>
+<arg>Other Case</arg>
+</arguments>
+<kw name="Other Case">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is Othe Case</arg>
+</arguments>
+<msg timestamp="20220411 18:43:49.171" level="INFO">This is Othe Case</msg>
+<status status="PASS" starttime="20220411 18:43:49.171" endtime="20220411 18:43:49.171"></status>
+</kw>
+<status status="PASS" starttime="20220411 18:43:49.171" endtime="20220411 18:43:49.171"></status>
+</kw>
+<status status="PASS" starttime="20220411 18:43:49.170" endtime="20220411 18:43:49.171"></status>
+</kw>
+<status status="PASS" starttime="20220411 18:43:49.170" endtime="20220411 18:43:49.171"></status>
+</kw>
+<status status="PASS" starttime="20220411 18:43:49.170" endtime="20220411 18:43:49.172" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20220411 18:43:49.150" endtime="20220411 18:43:49.172"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TC 04 TestFiles">TC 04 TestFiles</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

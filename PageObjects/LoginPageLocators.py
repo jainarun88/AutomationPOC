@@ -1,0 +1,5 @@
+lnk_login = "xpath://a[contains(text(),'Log in')]"
+txt_emailPass = "xpath://input[@id='Email']"
+txt_loginUsername = "xpath://input[@id='txtUsername']"
+txt_loginPassword = "xpath://input[@id='Password']"
+btn_login = "xpath://button[contains(text(),'Log in')]"
